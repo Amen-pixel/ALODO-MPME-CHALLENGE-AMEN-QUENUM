@@ -24,7 +24,7 @@ Ce choix permet d'offrir une démonstration percutante, ciblée et directement a
 
 ## 4. Guide d'Installation et de Lancement
 Pour exécuter ce projet en local sur votre machine, suivez les étapes ci-dessous :
-```bash
+ Bash
 # 1. Cloner le dépôt GitHub
 git clone https://github.com/Amen-pixel/ALODO-MPME-CHALLENGE-AMEN-QUENUM.git
 # 2. Naviguer dans le dossier du projet
@@ -34,9 +34,18 @@ npm install
 # 4. Lancer le serveur de développement local
 npm run dev
 
-5. Fonctionnalités ImplémentéesÉcran d'accueil immersif : Présentation claire de l'objectif du diagnostic avec le logo ALODO TECH.Parcours interactif dynamique : Navigation fluide entre les questions avec barre de progression implicite.Sécurité et validation : Impossibilité de passer à la question suivante sans réponse. Système Précédent / Suivant.Tableau de bord des résultats complet :Calcul et affichage d'un Score Global de maturité sur 100.Ventilation des scores par axe : Finance, Commercial, Digitalisation.Synthèse textuelle automatisée du profil de l'entreprise.Identification claire des points forts et des axes d'amélioration.Délivrance d'une recommandation prioritaire sur-mesure.
+## 5. Fonctionnalités Implémentées
+- **Écran d'accueil immersif** : Animation aux couleurs d'ALODO TECH et présentation claire de l'objectif du diagnostic.
+- **Parcours interactif dynamique** : Navigation fluide entre les questions avec une barre de progression en temps réel pour éviter toute sensation de perte chez l'utilisateur.
+- **Sécurité et validation de parcours** : Impossibilité de passer à la question suivante sans avoir sélectionné une option, couplé à un système de retour en arrière (Précédent / Suivant).
+- **Tableau de bord des résultats complet** : Calcul et affichage d'un Score Global de maturité sur 100. Ventilation des scores par axe (Finance, Commercial, Digitalisation). Synthèse textuelle automatisée du profil de l'entreprise. Identification claire des points forts et des axes d'amélioration. Délivrance d'une recommandation prioritaire sur-mesure.
 
-6. Limites Actuelles du PrototypePersistance des données : Les résultats ne sont pas stockés dans une BDD. Pas de stockage long terme côté serveur.Périmètre réduit : Seules 3 dimensions sur les 8 du programme global d'ALODO ont été modélisées.Authentification : Le parcours est entièrement anonyme. Pas d'espace personnel sécurisé pour cette version MVP.
+## 6. Limites Actuelles du Prototype
+- **Persistance des données** : Les résultats du diagnostic ne sont pas stockés de manière permanente dans une base de données relationnelle (pas de stockage à long terme côté serveur à ce stade).
+- **Périmètre réduit** : Conformément au cahier des charges, seules 3 dimensions sur les 8 du programme global d'ALODO ont été modélisées.
+- **Authentification** : Le parcours est entièrement anonyme, l'accès à un espace personnel sécurisé pour chaque entreprise n'étant pas inclus dans cette version MVP.
 
-7. Pistes d'Amélioration FuturesDiagnostic Adaptatif Intelligent : Questionnaire en arbre de décision. Les questions s'adaptent selon la taille, le secteur d'activité.Export PDF du Rapport : Permettre de télécharger un compte-rendu officiel et détaillé du diagnostic.Tableau de bord Administrateur : Espace de suivi pour l'équipe ALODO TECH pour qualifier et analyser les données des cohortes de MPME.Développé pour le Challenge Technique ALODO TECH © 2026
-
+## 7. Pistes d'Amélioration (Futures)
+- **Diagnostic Adaptatif Intelligent** : Faire évoluer le questionnaire linéaire vers un arbre de décision dynamique où les questions s'adaptent en temps réel selon la taille, le secteur d'activité (négoce vs services) et les spécificités de la MPME.
+- **Export PDF du Rapport** : Permettre aux entrepreneurs de télécharger un compte-rendu officiel et détaillé de leur diagnostic sous format document.
+- **Tableau de bord Administrateur** : Intégrer un espace de suivi global pour l'équipe d'ALODO TECH afin de qualifier, trier et analyser les données des cohortes de MPME candidates.

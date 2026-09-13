@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fin_1",
+    "dimension": "Finance",
+    "intitule": "Suivez-vous régulièrement la trésorerie et les marges de votre entreprise ?",
+    "options": [
+      { "label": "Non, aucun suivi régulier", "points": 0 },
+      { "label": "Oui, de manière informelle (cahier ou mémoire)", "points": 5 },
+      { "label": "Oui, via un outil structuré (Excel, logiciel comptable)", "points": 10 }
+    ]
+  },
+  {
+    "id": "fin_2",
+    "dimension": "Finance",
+    "intitule": "Faites-vous une séparation stricte entre vos dépenses personnelles et celles de l'entreprise ?",
+    "options": [
+      { "label": "Non, tout est mélangé", "points": 0 },
+      { "label": "Partiellement", "points": 5 },
+      { "label": "Oui, comptes et caisses totalement séparés", "points": 10 }
+    ]
+  },
+  {
+    "id": "fin_3",
+    "dimension": "Finance",
+    "intitule": "Disposez-vous d'états financiers ou d'un bilan à la fin de l'année ?",
+    "options": [
+      { "label": "Non", "points": 0 },
+      { "label": "En cours de mise en place", "points": 5 },
+      { "label": "Oui, rédigés par un comptable ou un professionnel", "points": 10 }
+    ]
+  },
+  {
+    "id": "com_1",
+    "dimension": "Commercial",
+    "intitule": "Disposez-vous d'un fichier client structuré pour effectuer des relances ?",
+    "options": [
+      { "label": "Non, aucune liste centralisée", "points": 0 },
+      { "label": "Oui, un répertoire téléphonique ou un carnet", "points": 5 },
+      { "label": "Oui, une base de données / CRM à jour", "points": 10 }
+    ]
+  },
+  {
+    "id": "com_2",
+    "dimension": "Commercial",
+    "intitule": "Comment mesurez-vous la satisfaction et la fidélité de vos clients ?",
+    "options": [
+      { "label": "Aucune mesure effectuée", "points": 0 },
+      { "label": "De façon informelle lors des échanges", "points": 5 },
+      { "label": "Via des enquêtes ou un suivi régulier des réclamations", "points": 10 }
+    ]
+  },
+  {
+    "id": "com_3",
+    "dimension": "Commercial",
+    "intitule": "Menez-vous des actions de prospection actives pour acquérir de nouveaux clients ?",
+    "options": [
+      { "label": "Non, on compte uniquement sur le bouche-à-oreille", "points": 0 },
+      { "label": "Occasionnellement", "points": 5 },
+      { "label": "Oui, stratégie d'acquisition régulière", "points": 10 }
+    ]
+  },
+  {
+    "id": "dig_1",
+    "dimension": "Digitalisation",
+    "intitule": "Utilisez-vous des solutions de paiement digital (Mobile Money, carte bancaire) ?",
+    "options": [
+      { "label": "Non, uniquement du cash", "points": 0 },
+      { "label": "Oui, uniquement réception sur compte personnel", "points": 5 },
+      { "label": "Oui, compte marchand officiel (Mobile Money Pro, etc.)", "points": 10 }
+    ]
+  },
+  {
+    "id": "dig_2",
+    "dimension": "Digitalisation",
+    "intitule": "Quelle est la présence en ligne de votre MPME pour échanger avec vos clients ?",
+    "options": [
+      { "label": "Aucune présence en ligne", "points": 0 },
+      { "label": "Utilisation de WhatsApp simple ou page personnelle", "points": 5 },
+      { "label": "WhatsApp Business / Réseaux sociaux professionnels / Site web", "points": 10 }
+    ]
+  },
+  {
+    "id": "dig_3",
+    "dimension": "Digitalisation",
+    "intitule": "Utilisez-vous des outils numériques pour automatiser la gestion (stocks, factures, ventes) ?",
+    "options": [
+      { "label": "Non, tout est manuel", "points": 0 },
+      { "label": "Partiellement (tableurs type Excel)", "points": 5 },
+      { "label": "Oui, logiciels ou applications dédiées", "points": 10 }
+    ]
+  }
+]

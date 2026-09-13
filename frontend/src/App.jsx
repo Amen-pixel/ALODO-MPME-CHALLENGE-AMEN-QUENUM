@@ -245,11 +245,11 @@ export default function App() {
         </div>
         <div className="result-card">
           <h3>✅ Points forts</h3>
-          <ul>{diagnostic.points_forts.map((pf, i) => <li key={i}>• {pf}</li>)}</ul>
+          <ul>{diagnostic.points_forts.map((pf, i) => <li key={i}>{pf}</li>)}</ul> {/* CORRIGÉ ICI: plus de • */}
         </div>
         <div className="result-card">
           <h3>⚠️ Axes d'amélioration critiques</h3>
-          <ul>{diagnostic.axes_amelioration.map((ax, i) => <li key={i}>• {ax}</li>)}</ul>
+          <ul>{diagnostic.axes_amelioration.map((ax, i) => <li key={i}>{ax}</li>)}</ul> {/* CORRIGÉ ICI: plus de • */}
           <h3>🎯 Recommandation stratégique prioritaire</h3>
           <div className="reco-box">{diagnostic.recommandation_prioritaire}</div>
         </div>

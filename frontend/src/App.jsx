@@ -190,6 +190,7 @@ export default function App() {
   if (step === 'welcome') {
     return (
       <div className="container">
+        <img src="/logo-alodo.png" alt="ALODO TECH Logo" className="logo-alodo" />
         <h1>Diagnostic ALODO MPME</h1>
         <p className="subtitle">Évaluez la maturité financière, commerciale et numérique de votre entreprise en 2 minutes.</p>
         <button onClick={() => setStep('quiz')} className="btn-start">Démarrer le diagnostic</button>
@@ -204,6 +205,7 @@ export default function App() {
 
     return (
       <div className="container">
+        <img src="/logo-alodo.png" alt="ALODO TECH Logo" className="logo-alodo" />
         <div className="question-block">
           <h2><span className="badge">Question {currentQ + 1} / {questions.length}</span> Axe: {q.dimension}</h2>
           <h3>{q.intitule}</h3>
@@ -228,6 +230,7 @@ export default function App() {
   if (step === 'results' && diagnostic) {
     return (
       <div className="container">
+        <img src="/logo-alodo.png" alt="ALODO TECH Logo" className="logo-alodo" />
         <div className="result-header">
           <h2 className="result-title">Bilan de votre Diagnostic</h2>
           <div className="score-global-card">

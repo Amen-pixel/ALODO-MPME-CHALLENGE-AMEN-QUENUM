@@ -1,89 +1,16 @@
-# ALODO MPME - Prototype de Diagnostic
+# ALODO MPME - Prototype de Diagnostic et Évaluation de Maturité
 
-> Prototype interactif développé dans le cadre du challenge technique **ALODO TECH** pour évaluer la maturité des MPME.
+> Prototype interactif et intelligent développé dans le cadre du challenge technique **ALODO TECH** pour évaluer la maturité globale des Micro, Petites et Moyennes Entreprises (MPME) en Afrique de l'Ouest.
+>
+> 1. Présentation du ProjetCe projet est un prototype fonctionnel d'interface de diagnostic pour le programme ALODO MPME. Il a été conçu pour immerger l'entrepreneur dans un parcours d'évaluation fluide et structuré. L'application simule une analyse granulaire de la santé de l'entreprise, transformant des réponses simples à un questionnaire ciblé en un tableau de bord décisionnel clair, doté d'un score global, de scores par axe, de points forts, d'axes d'amélioration et de recommandations stratégiques.  2. Choix Produit et Justification du PérimètrePour répondre aux contraintes du challenge tout en maximisant la pertinence métier, le périmètre a été recentré sur 3 dimensions fondamentales issues du référentiel global d'ALODO :  Finance : Analyse critique de la santé financière, de la gestion de la trésorerie et de la séparation impérative entre les comptes personnels et professionnels.  Commercial : Évaluation des méthodes d'acquisition client, des performances de vente et de la structuration de la relation client.  Digitalisation : Mesure de l'adoption des outils numériques, de la présence en ligne et de l'utilisation des solutions de paiement adaptées au marché local (comme Mobile Money).  Ce choix permet d'offrir une démonstration percutante, ciblée et directement applicable aux réalités des marchés émergents.3. Choix Techniques et ArchitectureFront-end : Développé avec React (via Vite) pour garantir une réactivité instantanée, une modularité exemplaire des composants et une expérience utilisateur sans latence.  Stylisation : CSS moderne (utilisant les Flexbox, les variables CSS et un design responsive axé Mobile First), reprenant fidèlement l'identité visuelle et la charte graphique d'ALODO TECH (Vert, Jaune, Bleu, Or, Rouge).  Architecture des Données : Gestion d'état locale robuste (useState, useEffect) simulant les appels API de diagnostic pour assurer un rendu dynamique et une évolutivité aisée vers un backend complet.  4. Guide d'Installation et de LancementPour exécuter ce projet en local sur votre machine, suivez les étapes ci-dessous :Bash# 1. Cloner le dépôt GitHub
+git clone [https://github.com/Amen-pixel/ALODO-MPME-CHALLENGE-AMEN-QUENUM.git](https://github.com/Amen-pixel/ALODO-MPME-CHALLENGE-AMEN-QUENUM.git)
 
+# 2. Naviguer dans le dossier du projet
+cd ALODO-MPME-CHALLENGE-AMEN-QUENUM
 
-1. Présentation
-Ce projet est un prototype fonctionnel d'interface de diagnostic pour le programme ALODO MPME. Il permet de guider un entrepreneur à travers un parcours de questions structuré, d'analyser ses réponses en temps réel et de lui restituer un bilan synthétique sous forme de score global, de scores par axe, de points forts, d'axes d'amélioration et de recommandations prioritaires.
-
-2. Choix produit
-Pour ce prototype, le périmètre a été volontairement recentré sur 3 dimensions clés parmi les 8 du programme global, garantissant à la fois la pertinence métier et la concision :
-
-Finance : Analyse de la gestion de trésorerie et de la séparation des dépenses personnelles/professionnelles.
-
-Commercial : Évaluation des méthodes de prospection et de la gestion de la relation client.
-
-Digitalisation : Utilisation des outils numériques et des solutions de paiement adaptées au marché local.
-
-3. Choix techniques
-Front-end : React (Vite) pour une interface ultra-réactive, modulaire et fluide.
-
-Stylisation : CSS moderne (Flexbox, variables CSS, design responsive) inspiré de la charte graphique d'ALODO TECH.
-
-Architecture : Séparation propre des composants et communication avec une API (ou structure de données mockées) pour assurer l'extensibilité du projet.
-
-4. Installation et Lancement
-Suivez les étapes ci-dessous pour lancer le projet en local :
-
-Bash
-# Cloner le dépôt
-git clone [https://github.com/votre-nom/ALODO-MPME-CHALLENGE-](https://github.com/votre-nom/ALODO-MPME-CHALLENGE-)[PRENOM-NOM].git
-
-# Accéder au dossier du projet
-cd [nom-du-dossier]
-
-# Installer les dépendances
+# 3. Installer les dépendances nécessaires
 npm install
 
-# Lancer le serveur de développement
+# 4. Lancer le serveur de développement local
 npm run dev
-5. Fonctionnalités
-Écran d'accueil interactif aux couleurs d'ALODO TECH.
-
-Parcours de questions dynamique avec indicateur de progression en temps réel.
-
-Navigation intuitive (boutons Suivant / Précédent avec validation obligatoire des réponses).
-
-Tableau de bord des résultats affichant :
-
-Le score global de maturité sur 100.
-
-Les scores ventilés par axe (Finance, Commercial, Digitalisation).
-
-Une synthèse automatisée.
-
-Les points forts et axes d'amélioration.
-
-Une recommandation prioritaire sur-mesure.
-
-6. Limites
-Absence de persistance en base de données relationnelle (les données de diagnostic ne sont pas stockées à long terme).
-
-Périmètre restreint à 3 dimensions et un nombre réduit de questions (conformément aux consignes du challenge).
-
-Pas de système d'authentification utilisateur (parcours anonyme).
-
-7. Améliorations (Futures)
-Implémentation d'un diagnostic adaptatif (le questionnaire s'adapte dynamiquement en fonction du secteur d'activité ou de la taille de l'entreprise).
-
-Ajout d'un export du rapport au format PDF.
-
-Intégration d'un dashboard administrateur pour suivre les statistiques globales des MPME évaluées.
-
-
-
-Note de Réflexion Produit / Bonus
-Vers un Diagnostic Adaptatif et Intelligent pour ALODO MPME
-Dans le cadre de l'extension future d'ALODO MPME à grande échelle, l'évolution la plus stratégique consisterait à faire passer le système d'un questionnaire linéaire à un diagnostic adaptatif.
-
-Qualification Initiale (Segment) :
-Dès l'introduction, l'entrepreneur renseignerait son secteur (ex: Négoce/Commerce, Services, Industrie/Production) et sa taille (ex: entreprise individuelle vs 10+ salariés).
-
-Arbre de Décision Dynamique :
-
-Une entreprise de négoce se verrait immédiatement poser des questions approfondies sur la gestion des stocks, des fournisseurs et la rotation de trésorerie.
-
-Une entreprise de services basculerait plutôt sur des questions liées à la structuration des contrats, la facturation et la dépendance aux compétences clés.
-
-Gains pour l'écosystème ALODO :
-Cette personnalisation permettrait d'affiner la pertinence des recommandations, de qualifier plus précisément le profil des MPME pour de futures opportunités de financement, et d'offrir une expérience utilisateur hautement personnalisée, renforçant ainsi l'impact d'ALODO TECH sur le terrain.
+5. Fonctionnalités ImplémentéesÉcran d'accueil immersif : Animation aux couleurs d'ALODO TECH et présentation claire de l'objectif du diagnostic.  Parcours interactif dynamique : Navigation fluide entre les questions avec une barre de progression en temps réel pour éviter toute sensation de perte chez l'utilisateur.  Sécurité et validation de parcours : Impossibilité de passer à la question suivante sans avoir sélectionné une option, couplé à un système de retour en arrière (Précédent / Suivant).  Tableau de bord des résultats complet :Calcul et affichage d'un Score Global de maturité sur 100.  Ventilation des scores par axe (Finance, Commercial, Digitalisation) sous forme de barres de progression visuelles.  Synthèse textuelle automatisée du profil de l'entreprise.Identification claire des points forts et des axes d'amélioration.  Délivrance d'une recommandation prioritaire sur-mesure.  6. Limites Actuelles du PrototypePersistance des données : Les résultats du diagnostic ne sont pas stockés de manière permanente dans une base de données relationnelle (pas de stockage à long terme côté serveur à ce stade).  Périmètre réduit : Conformément au cahier des charges, seules 3 dimensions sur les 8 du programme global d'ALODO ont été modélisées[cite: 1].Authentification : Le parcours est entièrement anonyme, l'accès à un espace personnel sécurisé pour chaque entreprise n'étant pas inclus dans cette version MVP[cite: 1].7. Pistes d'Amélioration (Futures)Diagnostic Adaptatif Intelligent : Faire évoluer le questionnaire linéaire vers un arbre de décision dynamique où les questions s'adaptent en temps réel selon la taille, le secteur d'activité (négoce vs services) et les spécificités de la MPME.Export PDF du Rapport : Permettre aux entrepreneurs de télécharger un compte-rendu officiel et détaillé de leur diagnostic sous format document.Tableau de bord Administrateur : Intégrer un espace de suivi global pour l'équipe d'ALODO TECH afin de qualifier, trier et analyser les données des cohortes de MPME candidates.

@@ -106,7 +106,7 @@ export default function App() {
   const questions = QUESTIONS_DATA;
 
   const handleSelectOption = (questionId, points) => {
-    setAnswers({...answers, [questionId]: points });
+    setAnswers({ ...answers, [questionId]: points });
     setTimeout(() => { navRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 150);
   };
 
@@ -136,7 +136,7 @@ export default function App() {
       let digitalTotal = 0, digitalMax = 0;
 
       questions.forEach((q) => {
-        const pts = answers[q.id]!== undefined? answers[q.id] : 0;
+        const pts = answers[q.id] !== undefined ? answers[q.id] : 0;
         const maxPts = Math.max(...q.options.map(o => o.points));
 
         if (q.dimension === "Finance") {
@@ -151,9 +151,9 @@ export default function App() {
         }
       });
 
-      const scoreFinance = financeMax > 0? Math.round((financeTotal / financeMax) * 100) : 0;
-      const scoreCommercial = commercialMax > 0? Math.round((commercialTotal / commercialMax) * 100) : 0;
-      const scoreDigital = digitalMax > 0? Math.round((digitalTotal / digitalMax) * 100) : 0;
+      const scoreFinance = financeMax > 0 ? Math.round((financeTotal / financeMax) * 100) : 0;
+      const scoreCommercial = commercialMax > 0 ? Math.round((commercialTotal / commercialMax) * 100) : 0;
+      const scoreDigital = digitalMax > 0 ? Math.round((digitalTotal / digitalMax) * 100) : 0;
 
       const scoreGlobal = Math.round((scoreFinance + scoreCommercial + scoreDigital) / 3);
 
@@ -225,80 +225,73 @@ export default function App() {
 
   if (step === 'welcome') {
     return (
-      <div className="container">
-        <h1>Diagnostic ALODO MPME</h1>
-        <p className="subtitle">Évaluez la maturité financière, commerciale et numérique de votre entreprise en 2 minutes.</p>
-        <button onClick={() => setStep('quiz')} className="btn-start">Démarrer le diagnostic</button>
-      </div>
-    );
-  }
+Diagnostic ALODO MPME
+Évaluez la maturité financière, commerciale et numérique de votre entreprise en 2 minutes.
 
-  if (step === 'quiz') {
-    const q = questions[currentQ];
-    if (!q) return <div className="container"><h2>Chargement...</h2></div>;
+setStep('quiz')} className="btn-start">Démarrer le diagnostic
 
-    const isAnswered = answers[q.id]!== undefined;
+);
+}
 
-    return (
-      <div className="container">
-        <div className="question-block">
-          <h2><span className="badge">Question {currentQ + 1} / {questions.length}</span> Axe: {q.dimension}</h2>
-          <h3>{q.intitule}</h3>
-          <div className="options">
-            {q.options.map((opt, idx) => (
-              <button
-                key={idx}
-                onClick={() => handleSelectOption(q.id, opt.points)}
-                className={answers[q.id] === opt.points? "selected" : ""}
-              >
-                <span className="option-letter">{String.fromCharCode(65 + idx)}</span> {opt.label}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className="navigation" ref={navRef}>
-          <button onClick={handlePrevious} disabled={currentQ === 0} className="btn-secondary">← Précédent</button>
-          <button onClick={handleNext} disabled={!isAnswered} className="btn-primary">
-            {loading? "Analyse..." : currentQ === questions.length - 1? "Voir les résultats →" : "Suivant →"}
-          </button>
-        </div>
-      </div>
-    );
-  }
+if (step === 'quiz') {
+const q = questions[currentQ];
+if (!q) return
 
-  if (step === 'results' && diagnostic) {
-    return (
-      <div className="container">
-        <div className="result-header">
-          <h2 className="result-title">Bilan de votre Diagnostic</h2>
-          <div className="score-global-card">
-            <p className="score-main">Score Global : <span>{diagnostic.score_global}</span>/100</p>
-            <p className="score-synthese">"{diagnostic.synthese}"</p>
-          </div>
-        </div>
+Chargement...
+;
 
-        <div className="scores-grid">
-          <div className="score-item"><p className="score-item-label">Finance</p><p className="score-item-value">{diagnostic.scores_par_axe.Finance}%</p></div>
-          <div className="score-item"><p className="score-item-label">Commercial</p><p className="score-item-value">{diagnostic.scores_par_axe.Commercial}%</p></div>
-          <div className="score-item"><p className="score-item-label">Digitalisation</p><p className="score-item-value">{diagnostic.scores_par_axe.Digitalisation}%</p></div>
-        </div>
+const isAnswered = answers[q.id] !== undefined;
 
-        <div className="result-card">
-          <h3>✅ Points forts</h3>
-          <ul>{diagnostic.points_forts.map((pf, i) => <li key={i}>• {pf}</li>)}</ul>
-        </div>
+return (
+Question {currentQ + 1} / {questions.length} Axe: {q.dimension}
+{q.intitule}
+{q.options.map((opt, idx) => (
+handleSelectOption(q.id, opt.points)}
+className={answers[q.id] === opt.points ? "selected" : ""}
 
-        <div className="result-card">
-          <h3>⚠️ Axes d'amélioration critiques</h3>
-          <ul>{diagnostic.axes_amelioration.map((ax, i) => <li key={i}>• {ax}</li>)}</ul>
-          <h3>🎯 Recommandation stratégique prioritaire</h3>
-          <div className="reco-box">{diagnostic.recommandation_prioritaire}</div>
-        </div>
+{String.fromCharCode(65 + idx)} {opt.label}
+))}
 
-        <button onClick={resetTest} className="btn-start">🔄 Refaire le test</button>
-      </div>
-    );
-  }
+← Précédent
 
-  return null;
+{loading ? "Analyse..." : currentQ === questions.length - 1 ? "Voir les résultats →" : "Suivant →"}
+
+);
+}
+
+if (step === 'results' && diagnostic) {
+return (
+
+Bilan de votre Diagnostic
+Score Global : {diagnostic.score_global}/100
+
+"{diagnostic.synthese}"
+
+Finance
+
+{diagnostic.scores_par_axe.Finance}%
+
+Commercial
+
+{diagnostic.scores_par_axe.Commercial}%
+
+Digitalisation
+
+{diagnostic.scores_par_axe.Digitalisation}%
+
+✅ Points forts
+• {pf}
+
+⚠️ Axes d'amélioration critiques
+• {ax}
+
+🎯 Recommandation stratégique prioritaire
+{diagnostic.recommandation_prioritaire}
+
+🔄 Refaire le test
+
+);
+}
+
+return null;
 }

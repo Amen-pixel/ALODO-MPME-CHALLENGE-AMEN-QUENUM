@@ -1,6 +1,6 @@
 # ALODO MPME - Prototype de Diagnostic et Évaluation de Maturité
 
-![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react) 
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3)
 ![Status](https://img.shields.io/badge/Status-Prototype-FF5A00?style=for-the-badge)

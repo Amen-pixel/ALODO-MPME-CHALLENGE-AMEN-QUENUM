@@ -1,4 +1,4 @@
-# ALODO MPME - Prototype de Diagnostic et Évaluation de Maturité
+# ALODO MPME - Prototype de Diagnostic et Évaluation de Maturité d'Entreprises
 
 ![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react) 
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite)

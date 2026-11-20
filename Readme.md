@@ -4,7 +4,7 @@
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3)
 ![Status](https://img.shields.io/badge/Status-Prototype-FF5A00?style=for-the-badge)
-## Lien de la démo : https://alodo-mpme-challenge-amen-quenum.vercel.app/
+## Lien : https://alodo-mpme-challenge-amen-quenum.vercel.app/
 > Prototype interactif et intelligent développé dans le cadre du challenge technique **ALODO TECH** pour évaluer la maturité globale des Micro, Petites et Moyennes Entreprises (MPME) en Afrique de l'Ouest.
 
 ## 1. Présentation du Projet
